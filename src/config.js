@@ -46,7 +46,7 @@ const questions = [
     type: 'checkbox',
     name: 'tipoAutenticacion',
     message: '¿De que manera quieres autenticarte?',
-    choices: ['Github','Local']
+    choices: ['Github','Local','BaseDatos']
   }
 ]
 
@@ -108,7 +108,19 @@ const authQuestions = {
       name: 'token',
       message: 'Cual es el token generado'
     }
-  ]
+  ],
+  BaseDatos:
+    {
+      type: 'input',
+      name: 'lectores',
+      message: 'Escribe los correos separados por comas',
+      default: 'alguien@algo.com, otro@algo.com',
+      filter: async (email) => {
+        let res = email.match(emailRegex)
+        if (res) return res
+        throw 'Email no valido'
+      }
+    }
 }
 
 export default async function config () {
