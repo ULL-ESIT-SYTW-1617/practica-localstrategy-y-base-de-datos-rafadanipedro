@@ -12,11 +12,13 @@ const path = require ('path')
 const config = require('./config.json')
 
 // const githubAuth = require('./authentication/github')
-const localAuth = require('./authentication/local')
+
+let dropbox = false
+const localAuth = dropbox ? require('./authentication/local') : require('./authentication/local_db')
 
 const app = express();
 
-// NOTE: Configurar todas las estrategias
+// NOTE: Configurar todas las est rategias
 // passport.use(githubAuth.strategy(config))
 passport.use(localAuth.strategy(config))
 
