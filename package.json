@@ -1,6 +1,6 @@
 {
-  "name": "plugin-iaas-passport-rafadanipedro",
-  "version": "0.1.2",
+  "name": "plugin-iaas-database-rafadanipedro",
+  "version": "0.1.3",
   "description": "Plugin para desplegar practica en el servidor del IAAS usando autenticacion con passport y el paquete gitbook-start-rafadanipedro",
   "scripts": {
     "build": "babel src -d dist"
