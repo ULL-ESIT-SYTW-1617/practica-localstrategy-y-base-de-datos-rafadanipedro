@@ -1,6 +1,6 @@
-# Práctica: Práctica: Passport y LocalStrategy. Práctica 8 de SYTW
+# Práctica: LocalStrategy y Base de Datos. Práctica 9 de SYTW
 
-[![Version NPM](https://img.shields.io/npm/v/plugin-iaas-passport-rafadanipedro.svg)](https://www.npmjs.com/package/plugin-iaas-passport-rafadanipedro)
+[![Version NPM](https://img.shields.io/npm/v/plugin-iaas-database-rafadanipedro.svg)](https://www.npmjs.com/package/plugin-iaas-database-rafadanipedro)
 
 ## Tutorial paso a paso
 
@@ -102,7 +102,7 @@ Para realizar la aplicación, se deben realizar una serie de pasos:
 * Cuando la aplicación ya ha sido creada, se puede acceder a la misma y utilizar el clientId y el clientSecret para poder realizar la autenticación mediante Oauth.
 
 ## Descripción de la práctica
- * [Gitbook de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicapassport.html)
+ * [Gitbook de la práctica](https://crguezl.github.io/ull-esit-1617/practicas/practicapassportlocalsequelize.html)
 
 ## Páginas personales
 
