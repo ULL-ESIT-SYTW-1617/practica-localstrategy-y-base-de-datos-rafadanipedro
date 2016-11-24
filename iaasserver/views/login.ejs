@@ -2,7 +2,7 @@
 <div class="login-form">
 
     <img src="assets/Logo_bubook.png" id="logo_bubook"></img>
-        <% if (config.tipoAutenticacion.find(auth => auth === 'Local')) { %>
+        <% if (config.tipoAutenticacion.find(auth => auth === 'Local' || auth === 'BaseDatos')) { %>
         <form action="/login/local" method="POST">
             <div class="form-group ">
                 <input type="email" class="form-control" name="email" placeholder="Correo electrónico " id="Email">

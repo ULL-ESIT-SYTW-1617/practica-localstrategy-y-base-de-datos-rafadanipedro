@@ -12,7 +12,15 @@ body {background-image: url("/assets/perro_malo.jpg");
 </style>
 <div class="error_center">
     <p class="error_text">¡No deberías estar aquí!</p>
-    <p class="error_text_2">No sabemos como has llegado hasta aquí, pero te pedimos amablemente que abandones esta página.</p>
+    <p class="error_text_2"><%=
+    (() => {
+        try {
+            return message
+        } catch(err) {
+            return 'No sabemos como has llegado hasta aquí, pero te pedimos amablemente que abandones esta página'
+        }
+    })()
+        %></p>
 </div>
  <% } else{ %>
  <style>
