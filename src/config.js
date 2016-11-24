@@ -1,5 +1,4 @@
 import inquirer from 'inquirer'
-import isIp from 'is-ip'
 import path from 'path'
 import fs from 'fs'
 
@@ -36,11 +35,7 @@ const questions = [
   {
     type: 'input',
     name: 'host',
-    message: 'Cual es tu direccion ip',
-    validate: value => {
-      if(isIp(value)) return true
-      return 'Introduce una ip correcta';
-    }
+    message: 'Cual es tu direccion ip'
   },
   {
     type: 'checkbox',
