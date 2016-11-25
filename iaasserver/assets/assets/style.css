@@ -248,3 +248,31 @@ body {
   color: white;
   font-size: 100%;
 }
+
+#texto_despliegue_2 {
+  margin-left :30px;
+}
+
+#logo_bubook_2 {
+  width: 500px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.login-form_2 {
+  width: 550px;
+  padding: 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
