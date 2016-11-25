@@ -37,7 +37,7 @@ Una vez hecho esto, el plugin desplegará un servidor de Express en la IP config
 Intenta navegar a la IP de tu máquina, debería decirte que tienes que desplegar el libro.
 Ahora despliega con `gulp IaasPassportRafadanipedro`, y debería desplegar tu libro en la máquina remota.
 
-#### Generar token con Dropbox
+#### Generar token con Dropbox (si se usa Dropbox)
 
 Para que podemos almacenar los datos de los usuarios, necesitamos almacenarlos en Dropbox, por lo que necesitamos el token de neustra token. Entramos a https://www.dropbox.com/developers/apps, cremos una nueva aplicación y generamos un token. En la ronda de preguntas, introducimos el token de Dropbox.
 
@@ -48,7 +48,11 @@ En el caso de utilizar el registro con LocalStrategy, se nos creará por defecto
 La primera vez que iniciemos sesión, se requerirá que el usuario cambie la contraseña, ya que no admitimos `1234` como contraseña. Una vez cambiada, deberemos cerrar sesión accediendo a `/logout`. A continuación, ya podremos iniciar sesión sin problemas
 
 
-### Tutorial autenticación con Github
+#### Cerrar sesión y cambio de contraseña
+
+Para cerrar la sesión de nuestro usuario, tenemos que acceder a `/logout`. En caso de querer cambiar la contraseña, tenemo que acceder a `/login/password`.
+
+#### Tutorial autenticación con Github
 
 Lo primero que debemos de hacer es instalar el plugin usando el paquete [gitbook-start-github-rafadanipedro](https://www.npmjs.com/package/gitbook-start-github-rafadanipedro)
 
