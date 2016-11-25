@@ -4,12 +4,20 @@
 
 ## Tutorial paso a paso
 
-### Tutorial autenticación LocalStrategy
+### Requisitos previos
+
+* Tienes que tener los paquetes de `sqlite` en la máquina remota.
+
+  `sudo apt-get install sqlite3 libsqlite3-dev`
+
+* Tienes que tener `node` en el `$PATH`. A veces cuando lo instalamos no se añade al `$PATH`, por ejemplo cuando lo instalamos con `nvm`.
+
+### Tutorial autenticación LocalStrategy y Base de Datos
 
 Lo primero que debemos de hacer es instalar el plugin usando el paquete [gitbook-start-github-rafadanipedro](https://www.npmjs.com/package/gitbook-start-github-rafadanipedro)
 
-Para usarlo, ejecutamos el siguiente comando:
-`gitbook-start --deploy="plugin-passport-passport-rafadanipedro"`
+Para usarlo junto al plugin, ejecutamos el siguiente comando:
+`gitbook-start --deploy="plugin-iaas-database-rafadanipedro"`
 
 Al instalar, se irá preguntando la configuración, por ejemplo:
 
@@ -20,10 +28,9 @@ Al instalar, se irá preguntando la configuración, por ejemplo:
 ? Cual es tu direccion ip: 95.122.54.178
 ? ¿De que manera quieres autenticarte?:
 - [ ] Github
-- [X] Local
-? Escribe los correos separados por comas (alguien@algo.com, otro@algo.com)
-? Entre en esta direccion para crear una OauthApplication enDropbox https://www.dropbox.com/developers/apps y escribe "confirmar" para continuar
-? ¿Cual es el token generado?
+- [ ] Local
+- [X] BaseDatos
+? Escribe los correos separados por comas (alguien@algo.com, otro@algo.com) pedro@pedro.com, rafa@rafa.com, daniel@daniel.com
 
 ```
 Una vez hecho esto, el plugin desplegará un servidor de Express en la IP configurada. Además, se añadirán las tareas correspondintes a tu `gulpfile.js`.
@@ -56,6 +63,7 @@ Al instalar, se irá preguntando la configuración, por ejemplo:
 ? ¿De que manera quieres autenticarte?:
 - [X] Github
 - [ ] Local
+- [X] BaseDatos
 ? Entre en esta direccion para crear una OauthApplication en Github https://github.com/settings/developers y escribe "confirmar" para continuar: confirmar
 ? Cual es el clientID:
 ? Cual es el clientSecret:
